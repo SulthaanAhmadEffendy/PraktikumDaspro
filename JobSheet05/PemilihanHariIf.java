@@ -8,7 +8,7 @@ public class PemilihanHariIf {
         String dayType;
         System.out.print("Input Day (1-7): ");
         day = sc.nextInt();
-        if (day == 1 || day == 2 || day == 3 || day == 4 || day == 5) {
+        if (day >= 1 && day <= 5) {
             dayType = "Weekday";
         } else if (day == 6 || day == 7) {
             dayType = "Weekend";
