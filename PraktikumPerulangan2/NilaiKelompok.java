@@ -8,8 +8,7 @@ public class NilaiKelompok {
         double totalNilai = 0;
         double rataNilai;
       
-        int i = 1;
-        while (i <= 6) {
+       for (int i = 1; i <= 6; i++) {
             System.out.println("Anggota kelompok ke-" + i);
             totalNilai = 0;
             
