@@ -13,18 +13,18 @@ public class ArrayRataNilai {
         double totalTidakLulus = 0;
         int countTidakLulus = 0;
 
-        // Input nilai mahasiswa
+       
         for (int i = 0; i < nilaiMhs.length; i++) {
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + " : ");
             nilaiMhs[i] = sc.nextInt();
         }
 
-        // Hitung total semua nilai
+        
         for (int i = 0; i < nilaiMhs.length; i++) {
             total += nilaiMhs[i];
         }
 
-        // Hitung nilai tertinggi
+       
         int nilaitertinggi = nilaiMhs[0];
         for (int i = 1; i < nilaiMhs.length; i++) {
             if (nilaiMhs[i] > nilaitertinggi) {
@@ -32,7 +32,7 @@ public class ArrayRataNilai {
             }
         }
 
-        // Hitung nilai terendah
+        
         int nilaiterrendah = nilaiMhs[0];
         for (int i = 1; i < nilaiMhs.length; i++) {
             if (nilaiMhs[i] < nilaiterrendah) {
@@ -40,7 +40,7 @@ public class ArrayRataNilai {
             }
         }
 
-        // Hitung rata-rata nilai lulus dan tidak lulus
+        
         for (int i = 0; i < nilaiMhs.length; i++) {
             if (nilaiMhs[i] >= 70) {
                 totalLulus += nilaiMhs[i];
