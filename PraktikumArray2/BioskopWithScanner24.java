@@ -16,33 +16,29 @@ public class BioskopWithScanner24 {
             System.out.println("3. Exit");
             System.out.print("Pilih menu (1-3): ");
             pilihan = sc.nextInt();
-            sc.nextLine(); 
+            sc.nextLine();
 
             if (pilihan == 1) {
-               
                 while (true) {
                     System.out.print("Masukkan nama: ");
                     String nama = sc.nextLine();
 
-                    int baris, kolom;
+                    int baris = 0, kolom = 0;  
                     boolean valid = false;
 
-                    
                     while (!valid) {
                         System.out.print("Masukkan Baris (1-4): ");
                         baris = sc.nextInt();
 
                         System.out.print("Masukkan Kolom (1-2): ");
                         kolom = sc.nextInt();
-                        sc.nextLine(); 
+                        sc.nextLine();
 
-                        
                         if (baris < 1 || baris > 4 || kolom < 1 || kolom > 2) {
                             System.out.println("Nomor baris atau kolom tidak tersedia!");
                             continue;
                         }
 
-                       
                         if (penonton[baris - 1][kolom - 1] != null) {
                             System.out.println("Kursi pada baris " + baris + " kolom " + kolom + " sudah terisi!");
                             System.out.println("Silahkan pilih kursi lain.\n");
@@ -64,7 +60,6 @@ public class BioskopWithScanner24 {
                 }
 
             } else if (pilihan == 2) {
-                
                 System.out.println("\n===== DAFTAR PENONTON =====");
                 for (int i = 0; i < penonton.length; i++) {
                     System.out.print("Baris ke-" + (i + 1) + ": ");
