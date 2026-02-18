@@ -6,6 +6,17 @@ public class Mahasiswa25 {
     String kelas;
     double ipk;
 
+    Mahasiswa25() {
+
+    }
+
+    Mahasiswa25(String nm, String nim, String kelas, double ipk) {
+        this.nama = nm;
+        this.nim = nim;
+        this.kelas = kelas;
+        this.ipk = ipk;
+    }
+
     void tampilkanInformasi() {
         System.out.println("Nama: " + nama);
         System.out.println("NIM: " + nim);
@@ -36,6 +47,6 @@ public class Mahasiswa25 {
             return "Kinerja Kurang";
         }
     }
-    
+
     
 }
